@@ -4,9 +4,9 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers'])
+angular.module('SA4LaunchPad', ['ionic', 'SA4LaunchPad.controllers', 'SA4LaunchPad.services'])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform) {'SA4LaunchPad.services'
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -57,6 +57,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
+
     .state('app.playlists', {
       url: "/playlists",
       views: {
@@ -77,6 +78,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/builder');
 });
 

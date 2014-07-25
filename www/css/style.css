@@ -1,1 +1,255 @@
-/* Empty. Add your own CSS if you like */
+/* Added Styles from Jordan's proto-1 */
+
+div.sa4-app-icon {
+  font-size: 30px;
+  padding-left: 4px;
+  padding-top: 4px;
+  
+}
+
+div.sa4-user-icon {
+  font-size: 30px;
+  padding-left: 15px;
+  padding-top: 4px;
+  
+}
+
+.menu {
+	background-color:#32425c;
+}
+
+.pane {
+	background-color:#f3f3f3;
+}
+
+.bar {
+	border-bottom:none;
+}
+
+/*Left Menu*/
+
+.sa-user-icon {
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	background-color:#fff;
+	margin:15px;
+}
+
+.sa-left-menu .item-content{
+	background-color:#32425c;
+	padding: 15px 45px 25px 15px;
+}
+
+.sa-left-menu a {
+	color:#fff;
+}
+
+.sa-left-menu .list {
+	margin-top:35px;
+}
+
+.sa-left-menu .item {
+	border-color:#2D3B53;
+}
+
+.sa-left-menu .item-content.activated {
+	background-color:#2D3B53;
+}
+
+.sa-left-menu .item-divider {
+	background-color:#2D3B53;
+	color:#fff;
+}
+
+.sa-left-menu .bar-header {
+	background-color: #2D3B53;
+	border:none;
+	height:80px;
+}
+
+.sa-left-menu .bar-header .title {
+	margin-top:10px;
+	color:#fff;
+	text-align:left;
+	margin-left:75px;
+}
+
+.sa-left-menu .bar-header .subtitle {
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+z-index: 0;
+overflow: hidden;
+margin: 0 10px;
+min-width: 30px;
+height: 43px;
+text-align: center;
+text-overflow: ellipsis;
+white-space: nowrap;
+font-size: 17px;
+line-height: 44px;
+color:#A1A8B9 ;
+margin-top:30px;
+margin-left:75px;
+font-size:14px;
+text-align:left;
+	
+}
+
+.sa4-app-icon {
+	width:40px;
+	height:40px;
+	border-radius:6px;
+	background-color:#38A4D2;
+	display:inline-block;
+	margin-bottom:-15px;
+	margin-right:18px;
+}
+
+/*right menu*/
+
+.sa-right-menu .bar-header {
+	background-color: #2D3B53;
+	border:none;
+}
+
+.sa-right-menu .bar-header h1 {
+	color:#fff;
+}
+
+.sa-right-menu .item-content{
+	background-color:#32425c;
+	color:#fff;
+}
+
+.sa-right-menu .item{
+	border-color:#2D3B53;
+	
+}
+
+
+/*views*/
+
+.sa4-view {
+	background-color:#F3F3F3;
+}
+
+.sa4-view .item-content {
+	background-color:#F3F3F3;
+}
+
+.bar {
+	border-bottom:none;
+}
+
+.bar-sa4 {
+	background-color:#a1c344;
+}
+
+.bar-sa4 h1 { 
+	color:#fff;
+}
+
+.bar-sa4 .icon {
+	color:#fff;
+}
+
+
+/*details styles*/
+
+.sa4-details-small  {
+	background-color:#fff;
+	width:100%;
+	height:60px;
+}
+
+.sa4-details-small .sa4-app-icon {
+	width:40px;
+	height:40px;
+	color:blue;
+	border-radius:6px;
+	margin:6px;
+}
+
+.sa4-details-small .sa4-app-title h2 {
+	float:left;
+	color:#3D4351;
+	font-size:20px;
+	padding-top:12px;
+}
+
+.sa4-button {
+	float:right;
+	width:80px;
+	height:40px;
+	background-color:#fff;
+	border:solid #f3f3f3 2px;
+	border-radius:6px;
+	text-align: center;
+	padding:10px;
+	margin-top:5px;
+	color:#38A4D2;
+}
+
+.sa4-details {
+	background-color:#32425c;
+	width:100%;
+	height:125px;
+}
+
+.sa4-details .sa4-title{
+	font-size: 20px;
+	text-align: center;
+	color:#fff;
+}
+
+.sa4-details .sa4-sub-details{
+	font-size:14px;
+	color:#A1A8B9;
+	text-align: center;
+}
+
+.sa4-details .sa4-app-icon2 {
+width:40px;
+	height:40px;
+	border-radius:6px;
+	background-color:#38A4D2;
+	margin-top:5px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:-20px;
+
+}
+
+.sa-action-button {
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	background-color:#a1c344;
+	position:absolute;
+	bottom:20px;
+	right:20px;
+	z-index: 10000;
+	box-shadow:4px;
+	vertical-align: middle;
+	background: #A1C344;
+	-moz-box-shadow:    0px 2px 4px 0px rgba(0,0,0,0.50);
+	box-shadow:         0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+
+.sa-action-button .icon {
+	color:#fff;
+	margin-left:18px;
+	padding-top:30px;
+	vertical-align: middle;
+
+
+}
+
+.sa4-page {
+	min-height:400px;
+	padding:20px;
+	background-color:#f3f3f3 ;
+}

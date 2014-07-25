@@ -1,6 +1,6 @@
-angular.module('starter.controllers', [])
+angular.module('SA4LaunchPad.controllers', [])
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+.controller('AppCtrl', function($scope, $ionicModal, $timeout, AppService) {
   // Form data for the login modal
   $scope.loginData = {};
 
@@ -14,7 +14,7 @@ angular.module('starter.controllers', [])
   // Triggered in the login modal to close it
   $scope.closeLogin = function() {
     $scope.modal.hide();
-  },
+  };
 
   // Open the login modal
   $scope.login = function() {
@@ -33,6 +33,31 @@ angular.module('starter.controllers', [])
   };
 })
 
+.controller('menuCtrl', function($scope,AppService) {
+  $scope.currentuser = AppService.getcurrentUser();
+
+  $scope.coreapps = AppService.getAppSet(2).apps;
+
+  $scope.userapps = AppService.getAppSet(0).apps;
+
+  $scope.settingapps = [
+    { name: 'Login', id: 8 },
+    { name: 'Logout', id: 9 },
+    { name: 'Profile', id: 10 }
+  ];
+})
+
+.controller('notificationCtrl', function($scope) {
+  $scope.notifications = [
+    { title: 'Notification 1', id: 1 },
+    { title: 'Notification 2', id: 2 },
+    { title: 'Notification 3', id: 3 },
+    { title: 'Notification 4', id: 4 },
+    { title: 'Notification 5', id: 5 },
+    { title: 'Notification 6', id: 6 },
+  ];
+})
+
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
     { title: 'Reggae', id: 1 },
@@ -45,4 +70,4 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
-})
+});
